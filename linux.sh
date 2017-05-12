@@ -18,3 +18,6 @@ git_save {
    ditto $gitRoot/$line $tmpDir/$line
   done
 }
+
+# What Linux distro do I have
+cat /etc/issue
