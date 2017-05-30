@@ -10,3 +10,6 @@ git add -u
 # --cached means show the changes in 
 #   the cache/index (i.e. staged changes) against the current HEAD. --staged is a synonym for --cached.
 git diff --cached
+
+# undo all uncommitted changes to HEAD
+git reset --hard HEAD
