@@ -15,5 +15,8 @@ git diff --cached
 git reset --hard HEAD
 
 # .gitconfig
-# Checkout a pull request from origin (of a github repository)
-pr = !"pr() { git fetch origin pull/$1/head:pr-$1; git checkout pr-$1; }; pr"
+
+[alias]
+
+  # Checkout a pull request from origin (of a github repository) Ex: `git pr 103`
+  pr = !"pr() { git fetch origin pull/$1/head:pr-$1; git checkout pr-$1; }; pr"
