@@ -13,3 +13,7 @@ git diff --cached
 
 # undo all uncommitted changes to HEAD
 git reset --hard HEAD
+
+# .gitconfig
+# Checkout a pull request from origin (of a github repository)
+pr = !"pr() { git fetch origin pull/$1/head:pr-$1; git checkout pr-$1; }; pr"
