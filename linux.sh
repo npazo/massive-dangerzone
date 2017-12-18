@@ -24,3 +24,6 @@ git_save {
 
 # What Linux distro do I have
 cat /etc/issue
+
+# date
+DATE=`date +%Y-%m-%d`
