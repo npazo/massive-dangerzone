@@ -27,3 +27,6 @@ cat /etc/issue
 
 # date
 DATE=`date +%Y-%m-%d`
+
+# count lines in a file
+cat <FILENAME> | sed '/^\s*$/d' | wc -l
