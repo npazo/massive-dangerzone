@@ -30,3 +30,6 @@ DATE=`date +%Y-%m-%d`
 
 # count lines in a file
 cat <FILENAME> | sed '/^\s*$/d' | wc -l
+
+# SystemD 
+systemctl start application.service # also stop/restart
