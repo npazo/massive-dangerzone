@@ -14,6 +14,9 @@ git diff --cached
 # undo all uncommitted changes to HEAD
 git reset --hard HEAD
 
+# rollback to a place
+git reset --hard <tag/branch/commit id>
+
 # .gitconfig
 
 [alias]
