@@ -12,3 +12,6 @@ psql -h <HOSTNAME> -U <USER> -d <DATABASE> -a -f listpgp.sql
 
 # dump only specific schema to a file
 pg_dump -n <SCHEMA_NAME> > output.sql
+
+# change psql 
+\password "<USER>"
