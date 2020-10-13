@@ -33,3 +33,10 @@ cat <FILENAME> | sed '/^\s*$/d' | wc -l
 
 # SystemD 
 systemctl start application.service # also stop/restart
+
+## Install - copy the file into the /etc/systemd/system directory as XXX.service, than we will start it:
+sudo cp XXX.service /etc/systemd/system && sudo systemctl start XXX.service
+
+## We can verify the service is active, with the following command:
+systemctl is-active XXX.service
+
