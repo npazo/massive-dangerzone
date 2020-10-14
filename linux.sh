@@ -38,7 +38,10 @@ systemctl start application.service # also stop/restart
 sudo cp XXX.service /etc/systemd/system && sudo systemctl start XXX.service
 
 ## We can verify the service is active, with the following command:
-systemctl is-active XXX.service
+systemctl is-active XXX.service 
+
+## if you want it to start on boot
+sudo systemctl enable XXX.service
 
 # parse the hour:min from uptime
 uptime | cut -d , -f 2 | tr -d '[:space:]'
