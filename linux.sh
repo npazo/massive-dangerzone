@@ -40,3 +40,5 @@ sudo cp XXX.service /etc/systemd/system && sudo systemctl start XXX.service
 ## We can verify the service is active, with the following command:
 systemctl is-active XXX.service
 
+# parse the hour:min from uptime
+uptime | cut -d , -f 2 | tr -d '[:space:]'
