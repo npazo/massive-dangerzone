@@ -15,7 +15,9 @@ git diff --cached
 git reset --hard HEAD
 
 # rollback to a place
-git reset --hard <tag/branch/commit id>
+# Note: As written in comments below, Using this is dangerous in a collaborative environment: you're rewriting history
+git reset --hard <old-commit-id>
+git push -f <remote-name> <branch-name>
 
 # .gitconfig
 
