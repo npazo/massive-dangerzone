@@ -48,3 +48,6 @@ uptime | cut -d , -f 2 | tr -d '[:space:]'
 
 # add sidebars to vertical video
 ffmpeg -i IMG_6712.MOV -vf 'split[original][copy];[copy]scale=ih*16/9:-1,crop=h=iw*9/16,gblur=sigma=20[blurred];[blurred][original]overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2' output.mp4
+
+# show the last 5 logins for the admin command
+last -5 admin
